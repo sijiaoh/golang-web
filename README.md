@@ -2,6 +2,10 @@
 
 Go言語によるWeb開発の学習のためのもの。
 
+## プロジェクト構造
+
+プロジェクト構造は[Standard Go Project Layout](https://github.com/golang-standards/project-layout)を参考にした。
+
 ## 採用フレームワーク
 
 - [Air](https://github.com/air-verse/air)
