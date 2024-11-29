@@ -4,6 +4,8 @@ Go言語によるWeb開発の学習のためのもの。
 
 ## 採用フレームワーク
 
+- [Air](https://github.com/air-verse/air)
+    - ホットリロードのため。
 - [Gin](https://github.com/gin-gonic/gin)
     - デファクトスタンダードっぽいため。
 - [ent](https://github.com/go-gorm/gen)
