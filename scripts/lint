@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+set -eu
+
+AUTO_FIX=false
+if [[ "${1:-}" == "-a" ]]; then
+  AUTO_FIX=true
+fi
+
+check_format() {
+  local files=$(gofmt -l .)
+
+  if [[ -n "$files" ]]; then
+    echo "$files"
+    return 1
+  else
+    return 0
+  fi
+}
+
+fix_format() {
+  gofmt -w .
+}
+
+if $AUTO_FIX; then
+  fix_format
+else
+  check_format || exit 1
+fi
