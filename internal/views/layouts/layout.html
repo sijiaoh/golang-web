@@ -1,0 +1,20 @@
+{{ define "layout_start" }}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {{ if .title }}
+        {{ .title }} - golang-web
+      {{ else }}
+        golang-web
+      {{ end }}
+    </title>
+  </head>
+  <body>
+{{ end }}
+
+{{ define "layout_end" }}
+  </body>
+</html>
+{{ end }}

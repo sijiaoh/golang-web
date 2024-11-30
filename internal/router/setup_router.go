@@ -6,5 +6,5 @@ import (
 )
 
 func SetupRouter(r *gin.Engine) {
-	r.GET("/ping", controllers_v1.PingController)
+	r.GET("/ping", controllers_v1.PingShow)
 }
